@@ -17,8 +17,8 @@ def check_and_print_greater_than_10(value: int) -> None:
     if value > 10:
         print(f"{value} is greater than 10")
 
-number: int = 12
-check_and_print_greater_than_10(number)
+numero: int = 12
+check_and_print_greater_than_10(numero)
 
 # 3.2 For Loops
 # Create a list of numbers from 1 to 5.
