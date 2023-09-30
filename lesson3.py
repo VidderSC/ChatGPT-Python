@@ -1,37 +1,80 @@
 # Lesson 3: Control Flow and Loops
 
 # 3.1 If Statements
-# Write an if statement to check if a variable x is greater than 10.
-# If it is, print “x is greater than 10.”
-x: int = 12
+# Check if a variable is greater than 10.
+# Print a message if it is.
 
-if x > 10:
-    print("X is greater than 10")
+def check_and_print_greater_than_10(value: int) -> None:
+    """
+    Check if a number is greater than 10 and print a message.
+
+    Parameters:
+    value (int): The number to check.
+
+    Returns:
+    None
+    """
+    if value > 10:
+        print(f"{value} is greater than 10")
+
+number: int = 12
+check_and_print_greater_than_10(number)
 
 # 3.2 For Loops
 # Create a list of numbers from 1 to 5.
 # Use a for loop to print each number in the list.
 
-numbers: list = range(1, 6)
-for number in numbers:
-    print(number)
+def print_numbers_in_list(numbers: list) -> None:
+    """
+    Print each number in a list.
+
+    Parameters:
+    numbers (list): The list of numbers to print.
+
+    Returns:
+    None
+    """
+    for num in numbers:
+        print(num)
+
+numbers_list: list = list(range(1, 6))
+print_numbers_in_list(numbers_list)
 
 # 3.3 While Loops
-# Write a while loop that counts from 1 to 3 and prints each number.
+# Count from 1 to 3 and print each number.
 
-x = 1
-while x < 4:
-    print(x)
-    x += 1
+def count_and_print_numbers(number: int) -> None:
+    """
+    Count from 1 to a given number and print each number.
+
+    Parameters:
+    number (int): The number to count up to.
+
+    Returns:
+    None
+    """
+    start_number: int = 1
+    while start_number <= number:
+        print(start_number)
+        start_number += 1
+
+count_and_print_numbers(3)
 
 # 3.4 Exercise
-# Create a function that takes an integer n as input and prints all
-# even numbers from 1 to n. Use typed variables and return types.
+# Create a function that prints all even numbers from 1 to n.
 
-def print_even_numbers(n: int) -> None:
-    """Will print only the even numbers on the range 1 to n"""
-    for num in range(1,n):
-        if num%2 == 0:
-            print (num)
+def print_even_numbers(number: int) -> None:
+    """
+    Print even numbers from 1 to a given number.
+
+    Parameters:
+    number (int): The number to print even numbers up to.
+
+    Returns:
+    None
+    """
+    for num in range(1, number + 1):
+        if num % 2 == 0:
+            print(num)
 
 print_even_numbers(10)
