@@ -30,6 +30,14 @@ print()
 # Use typed variables and return types.
 
 def remove_spaces(string: str) -> str:
+    """Remove the caracter space from a given string.
+
+    Args:
+        string (str): The input string from where spaces will be removed.
+
+    Returns:
+        str: A new string with spaces removed.
+    """
     no_spaces: str = ""
     for letter in string:
         if letter != " ":
