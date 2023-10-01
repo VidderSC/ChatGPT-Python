@@ -4,6 +4,10 @@
 # - Create a list of your favorite fruits.
 # - Print out the first and last items in the list.
 
+favorite_fruits: list = [
+    "Strawberry", "Watermelon", "Kiwi", "Dragonfruit", "Banana"]
+print(favorite_fruits[0])
+
 # 5.2 List Comprehensions
 # - Create a list of numbers from 1 to 10 using a list comprehension.
 # - Create a new list that contains only the even numbers from the
