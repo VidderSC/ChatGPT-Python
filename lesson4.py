@@ -5,13 +5,7 @@
 # Create a function that calculates and returns the area of a rectangle.
 # The function should take two parameters, length and width, and return the area as a float.
 
-def area_rectangle(length: int, width: int) -> float:
-    """Calculates the area of a rectangle.
-    - Parameters:
-    length and width are (int)
-    - Returns:
-    (float)"""
-    return float(length * width)
+from geometry.py import area_rectangle
 
 # 4.2 Modules
 # Create a separate Python file/module named geometry.py.
